@@ -1,0 +1,7 @@
+Tahoma Regular - заголовк и абзац под фоткой + контакты.
+Georgia Regular - основной текст.
+System Bold или [OfficinaSerifC Book] ! - меню.
+Tahoma Bold - кнопка под фоткой + телефон в блоке "Звоните".
+[OfficinaSerifC Book] - заголовки на контактах.
+
+

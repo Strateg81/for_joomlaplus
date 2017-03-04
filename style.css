@@ -1,0 +1,454 @@
+
+/* font-face */
+
+@font-face 	{
+	font-family: 'Tahoma Regular';
+	src: url('fonts/Tahoma_Regular/Tahoma.eot');
+	src: url('fonts/Tahoma_Regular/Tahoma.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Tahoma_Regular/Tahoma.woff') format('woff'),
+	url('fonts/Tahoma_Regular/Tahoma.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tahoma Bold';
+	src: url('fonts/Tahoma_Bold/TahomaTahoma-Bold.eot');
+	src: url('fonts/Tahoma_Bold/Tahoma-Bold.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Tahoma_Bold/Tahoma-Bold.woff') format('woff'),
+	url('fonts/Tahoma_Bold/Tahoma-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Georgia Regular';
+	src: url('fonts/Georgia_Regular/Georgia.eot');
+	src: url('fonts/Georgia_Regular/Georgia.eot?#iefix') format('embedded-opentype'),
+	url('fonts/Georgia_Regular/Georgia.woff') format('woff'),
+	url('fonts/Georgia_Regular/Georgia.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Officina Serif';
+	src: url('fonts/OfficinaSerifC_Book/OfficinaSerifBold.eot');
+	src: url('fonts/OfficinaSerifC_Book/OfficinaSerifBold.eot?#iefix') format('embedded-opentype'),
+		url('fonts/OfficinaSerifC_Book/OfficinaSerifBold.woff') format('woff'),
+		url('fonts/OfficinaSerifC_Book/OfficinaSerifBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+/* content */
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+ background: gray;
+ font-family: 'Tahoma Regular', Arial, serif;
+}
+
+/* 	WRAPPER */
+
+div.wrapper {
+   position: relative;	
+   max-width: 1191px;
+   min-height: 1047px;
+   margin: 0 auto;
+   background: 
+    url(img/bg-pseudo-text.png) 90% 50% no-repeat,
+	url(img/bg-spot.png) no-repeat,   
+	url(img/bg-gram-big.png) 59% 29% no-repeat,   
+	url(img/bg-stamp.png) 0.6% 0 no-repeat,       
+	url(img/bg-note.png) 9.5% 84% no-repeat,
+	url(img/bg-stamp-mini.png) 54.5% 87.8% no-repeat, 	
+	url(img/bg-gram4.png) 19% 93.5% no-repeat,
+	url(img/bg-3.png) bottom no-repeat,   
+	url(img/bg-2.png),     
+	url(img/bg-1.jpg);
+      
+}
+
+/* HEADER */ 
+
+div.logo {
+	width: 193px;
+	height: 232px;
+	margin-left: 18.3%;
+	background: url(img/bg-logo.png) no-repeat;
+	transition: background 0.7s linear;
+}
+
+div.logo:hover {
+	background: url(img/bg-logo2.png) no-repeat;
+}
+
+nav div {
+	position: absolute;
+}
+
+
+nav div a {
+	font-family: 'Officina Serif', Arial, serif;
+	font-size: 21px;
+	color: black;
+}
+
+header div  a:hover {
+ color: #ffae00;
+}
+
+/* nav */
+
+div.poster {
+	width: 81px;
+	height: 60px;
+	background: #000;
+	top: 17.1%;
+	left: 41.9%;
+}
+
+div.poster:before {
+	display: block;
+	content: "";	
+	position: absolute;
+	top: -5px;
+	left: -7px;
+	background: #000;
+	width: 96px;
+	height: 5px;
+	
+}
+
+div.poster a {
+    position: absolute;
+	top: 20px;
+	left: 8px;
+	color: #ffae00;
+}
+
+
+
+
+div.menu {
+	width: 123px;
+	height: 41px;
+	background: url(img/bg-coffee.png) left bottom no-repeat;
+	top: 27.2%;
+	left: 35.4%;
+}
+
+div.menu  a {
+	position: absolute;
+	right: -3px;
+	top: -7px;
+}
+
+
+
+div.events {
+	width: 184px;
+	height: 80px;
+	background: url(img/bg-guitar.png) right bottom no-repeat;
+	top: 21.2%;
+	right: 25.9%;
+}
+
+div.events a  {
+	position: absolute;
+	left: 2px;
+	top: -2px;
+}
+
+div.gallery {
+	width: 286px;
+	height: 73px;
+	background: url(img/bg-gallery.png) top center no-repeat;
+	top: 2%;
+	right: 22.7%;
+}
+
+div.gallery a  {
+	position: absolute;
+	right: 41px;
+	bottom: 0;
+}
+
+div.gallery div {
+	width: 22px;
+	height: 15px;
+	background: #000;
+	border-radius: 3px;
+	position: absolute; 
+	color: white;
+	font-size: 11px;
+}
+
+div.gallery div.first { 
+	top: 15px;
+	right: 123px;
+}
+
+div.gallery div.second {
+	top: 15px;
+	right: 93px;
+
+}
+
+
+div.gallery div.third {
+	top: 15px;
+	right: 66px;
+	
+}	
+
+div.gallery div:hover  {
+	background: #ffae00;
+}	
+
+	
+div.forum {
+width: 102px;
+height: 76px;
+background: url(img/bg-microphone.png) left top no-repeat;
+top: 28%;
+right: 18.4%;
+}
+	
+div.forum  a  {
+	position: absolute;
+	right: -4px;
+	bottom: 9px;
+}
+
+
+div.contacts {
+width: 145px;
+height: 22px;
+background: url(img/bg-contacts.png) left top no-repeat;
+top: 38.6%;
+right: 15.5%;
+}
+	
+div.contacts  a  {
+	position: absolute;
+	right: -5px;
+	bottom: -1px;
+}
+
+
+/* End HEADER */
+
+
+
+/* MAIN */
+
+div.m-group {
+	position: absolute;
+	margin-top: -3px;
+	margin-left: 15%;
+	width: 152px;
+	background: url(img/bg-mgroup.png) no-repeat;
+	font-size: 11px;
+	padding-left: 17px;
+	
+}
+
+ div.m-group  h1 {
+	margin-top: 5px; 
+	font-size: 18px;
+}
+
+div.m-group button {
+	font-family: 'Tahoma Bold';
+	cursor: pointer;
+	border: none;
+	background: #ffe900;
+	padding: 2px 19px 5px 13px;
+	font-size: 12px;	
+	margin-top: -4px;
+	margin-left: -2px;
+}
+
+
+div.m-group div.photo {
+	width: 131px;
+	height: 131px;
+	margin-top: 149px;
+	border: 10px solid black; 
+    box-sizing: border-box; 
+	background-position: center center; 
+	-webkit-animation: back 30s linear infinite;
+    -moz-animation: back 30s linear infinite;
+    -o-animation: back 30s linear infinite;
+	animation: back 30s linear infinite;
+}
+
+	@keyframes back {
+
+      0% {
+        background-image: url(img/001img.jpg); 
+      }
+      
+	  20% {
+        background-image: url(img/001img.jpg); 
+      }
+	  
+      33% {
+       
+		 background-image: url(img/002img.jpg); 
+      }
+	  
+	  53% {
+       
+		 background-image: url(img/002img.jpg); 
+      }
+
+      66% {
+         
+		 background-image: url(img/003img.jpg); 
+      }
+	  
+	  86% {
+         
+		 background-image: url(img/003img.jpg); 
+      }
+	  
+    100% {
+			 background-image: url(img/001img.jpg);
+	}
+}
+
+    @-webkit-@keyframes back {
+
+      0% {
+        background-image: url(img/001img.jpg); 
+      }
+      
+	  20% {
+        background-image: url(img/001img.jpg); 
+      }
+	  
+      33% {
+       
+		 background-image: url(img/002img.jpg); 
+      }
+	  
+	  53% {
+       
+		 background-image: url(img/002img.jpg); 
+      }
+
+      66% {
+         
+		 background-image: url(img/003img.jpg); 
+      }
+	  
+	  86% {
+         
+		 background-image: url(img/003img.jpg); 
+      }
+	  
+    100% {
+			 background-image: url(img/001img.jpg);
+	}
+}
+
+
+	
+div.m-group p {
+	margin-top: -11px;	
+}
+
+div.club {
+	position: absolute; 
+	right: 26.2%;
+	top: 28.8%;
+	background: url(img/bg-main.png) no-repeat;
+	width: 513px;
+	min-height: 514px;
+	
+	
+	
+	
+}  
+
+div.club  article {
+	font-family: 'Georgia Regular', Arial, serif;
+	font-size: 14px;
+	color: #c59388; 
+	margin: 70px 52px 0 58px;
+}	
+	
+div.club  article p:first-child{ 
+    text-indent: 0.5%;
+}
+
+div.club  article p:not(first-child) {
+	margin-top: 19px;
+}
+
+div.club  article p span {
+	text-decoration: underline;
+}
+
+
+	/*End MAIN*/
+	
+	/* FOOTER */
+
+footer div {
+	position: absolute; 
+	
+}
+
+footer div, footer div a {
+	font-size: 11px;
+	color: #e1b3b6;
+}
+
+
+
+footer div h3 {
+	font-family: 'Officina Serif', Arial, serif;
+	font-size: 21px;
+	color: #000;
+}
+
+
+/* phone */
+
+div.phone {
+	top: 78.7%;
+	right: 55.7%;
+}
+
+div.phone h3+p, div.phone h3+p a{
+	margin-top: -16px;
+	font-family: 'Tahoma Bold', Arial, serif; 
+}
+
+div.phone h3+p a {
+	text-decoration: none;
+}
+
+/* address  */
+
+div.address {
+	top: 78.8%;
+	right: 24%;
+}
+
+div.address h3+p {
+	margin-top: -17px;
+}
+
+/* The End */
+
